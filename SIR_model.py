@@ -176,9 +176,16 @@ class SIR(object):
     fig, ax = plt.subplots(figsize=(15, 10))
     result_df.plot(ax=ax)
     print(f"beta={beta:.8f}, gamma={gamma:.8f}, r_0:{(beta/gamma):.8f}")
+    plt.savefig('result.png')
     return beta, gamma, beta/gamma, pred.y[1][1:]-pred.y[1][:-1]
 
 us_sir = SIR(US_df,Loss,120,S_US,I_US,R_US)
 beta, gamma, r_0, I_pred = us_sir.train()
+print("Your results of beat, gamma, r_0 and I_pred is:")
+print(beta)
+print(gamma)
+print(r_0)
+print(I_pred)
+
 
 
