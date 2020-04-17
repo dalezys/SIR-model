@@ -1,0 +1,10 @@
+      fun: 65043735.78540987
+ hess_inv: <2x2 LbfgsInvHessProduct with dtype=float64>
+      jac: array([ 2843007.44533539, 49217262.11905479])
+  message: b'CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL'
+     nfev: 30
+      nit: 2
+   status: 0
+  success: True
+        x: array([6.18256432e-07, 6.15367683e-07])
+beta=0.00000062, gamma=0.00000062, r_0:1.00469435
